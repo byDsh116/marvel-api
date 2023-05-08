@@ -1,24 +1,37 @@
-app__header {
-    height: 32px;
-    width: 201px;
-    left: 893px;
-    top: -156px;
-    border-radius: nullpx;
-    position: absolute;
-    width: 201px;
-    height: 32px;
-}
+@import '../../style/variables.scss';
 
-.app__title {
-    position: absolute;
-    width: 288px;
-    height: 37px;
 
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 33px;
+.app {
+    &__header {
+        display: flex;
+        justify-content: space-between;
+    }
 
-    color: #9F0013;
+    &__title {
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 37px;
+
+        span {
+            color: $main-color;
+        }
+    }
+
+    &__menu {
+        ul {
+            display: flex;
+            justify-content: space-between;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+
+            li {
+                margin: 0 8px;
+
+                a:hover {
+                    color: $main-color;
+                }
+            }
+        }
+    }
 }
