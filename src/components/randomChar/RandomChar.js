@@ -1,3 +1,4 @@
+import Button from '../button/Button'
 import './randomChar.scss'
 
 
@@ -15,10 +16,13 @@ const RandomChar = (props) => {
                         the enchanted hammer Mjolnir. While others have described Thor as an over-muscled,
                         oafish imbecile, he's quite smart and compassionate...
                     </p>
-                    <div className='randomchar__btn'>
-                        <button className='button__red'>HOMEPAGE</button>
-                        <button className='button__grey'>WIKI</button>
-                    </div>
+
+                    {/* <div className='randomchar__btns'> */}
+
+
+                    <Button />
+
+                    {/* </div> */}
                 </div>
             </div>
         </div>
