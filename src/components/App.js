@@ -1,23 +1,19 @@
-import './App.css';
+import '../style/style.scss'
+
 import AppHeader from './appHeader/AppHeader';
 import RandomChar from './randomChar/RandomChar';
-
-
-let plugImg = <img className='randomchar__img' src="https://i.pinimg.com/564x/b9/11/db/b911dbd417c2eac3fa7b02db2da7446a.jpg" alt="Random character" />
-
+import CharInfo from './charinfo/CharInfo';
 
 function App() {
   return (
-    <div className="App">
-      <div className="body">
-        <AppHeader />
-        <main>
-
-
-          <RandomChar img={plugImg} name={'NAME'} />
-
-        </main>
-      </div>
+    <div className="app">
+      <AppHeader />
+      <main>
+        <RandomChar name={'NAME'} />
+        <div className='char__info'>
+          <CharInfo />
+        </div>
+      </main>
     </div>
   );
 }
