@@ -1,9 +1,12 @@
-@import '../../style/variables.scss';
-
+@import './variables';
 
 .button {
+    position: absolute;
+    width: 101px;
+    height: 38px;
+    background: #9F0013;
     min-width: 101px;
-    color: #080303;
+    color: #fff;
     text-align: center;
     text-transform: uppercase;
     font-size: 14px;
@@ -45,26 +48,10 @@
         }
     }
 
-    &__red,
-    &__gray {
+    &__main,
+    &__secondary {
         &:hover {
             color: #fff;
-        }
-    }
-
-    &__gray {
-        .inner {
-            background-color: $grey;
-
-            &::before {
-                border-color: $grey transparent;
-                transition: none;
-            }
-
-            &::after {
-                border-color: $grey transparent;
-                transition: none;
-            }
         }
     }
 
@@ -74,7 +61,6 @@
         height: 10px;
         margin-left: 10px;
         transition: none;
-
     }
 
     &::after {
@@ -83,20 +69,10 @@
         height: 10px;
         margin-right: 10px;
         transition: none;
-
     }
 
-    &.button__red::before,
-    &.button__red::after {
+    &.button__main::before,
+    &.button__main::after {
         background-color: $main-color;
-    }
-
-    &.button__gray::before,
-    &.button__gray::after {
-        background-color: $grey;
-    }
-
-    &:hover {
-        transform: translateY(-5px);
     }
 }
