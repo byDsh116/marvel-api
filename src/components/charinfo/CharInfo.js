@@ -1,16 +1,13 @@
-import Button from '../button/Button'
-import thor from '../../resources/img/thor.jpeg';
+import loki from '../../resources/img/loki.png';
 import './charInfo.scss'
 
 const CharInfo = () => {
     return (
         <div className='charinfo'>
-            <img src="" alt="img" />
-            <title>titile</title>
-            <Button>button</Button>
-            <p> big p </p>
-            <h2>Comics</h2>
-
+            <div className='charinfo__descr'>
+                <img src={loki} alt='' />
+                <div><p className='charinfo__name'>loki</p></div>
+            </div>
         </div>
     )
 }

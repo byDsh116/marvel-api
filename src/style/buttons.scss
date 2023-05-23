@@ -1,10 +1,6 @@
 @import './variables';
 
 .button {
-    position: absolute;
-    width: 101px;
-    height: 38px;
-    background: #9F0013;
     min-width: 101px;
     color: #fff;
     text-align: center;
@@ -55,6 +51,22 @@
         }
     }
 
+    &__secondary {
+        .inner {
+            background-color: $grey;
+
+            &::before {
+                border-color: $grey transparent;
+                transition: none;
+            }
+
+            &::after {
+                border-color: $grey transparent;
+                transition: none;
+            }
+        }
+    }
+
     &::before {
         content: '';
         display: block;
@@ -74,5 +86,14 @@
     &.button__main::before,
     &.button__main::after {
         background-color: $main-color;
+    }
+
+    &.button__secondary::before,
+    &.button__secondary::after {
+        background-color: $grey;
+    }
+
+    &:hover {
+        transform: translateY(-5px);
     }
 }

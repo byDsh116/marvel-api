@@ -1,7 +1,7 @@
-import Button from '../button/Button'
 import './randomChar.scss'
-import mjolnir from '../../resources/img/mjolnir.png'
+import './../../style/buttons.scss'
 import thor from '../../resources/img/thor.jpeg'
+import mjolnir from '../../resources/img/mjolnir.png'
 
 
 const RandomChar = (props) => {
@@ -10,7 +10,7 @@ const RandomChar = (props) => {
             <div className='randomchar__block'>
                 <img src={thor} className='randomchar__img' />
                 <div className='randomchar__info'>
-                    <p className="randomchar__name">{props.name}</p>
+                    <p className="randomchar__name">Thor</p>
                     <p className='randomchar__descr'>
                         As the Norse God of thunder and lightning,
                         Thor wields one of the greatest weapons ever made,
@@ -18,8 +18,12 @@ const RandomChar = (props) => {
                         oafish imbecile, he's quite smart and compassionate...
                     </p>
                     <div className='randomchar__btns'>
-                        <Button />
-                        <Button />
+                        <button className='button button__main'>
+                            <div className='inner'> homepage</div>
+                        </button>
+                        <button className='button button__secondary'>
+                            <div className='inner'> wiki</div>
+                        </button>
                     </div>
                 </div>
             </div>
@@ -31,7 +35,9 @@ const RandomChar = (props) => {
                 <p className='randomchar__title'>
                     Or choose another one
                 </p>
-                <Button />
+                <button className="button button__main">
+                    <div className="inner">try it</div>
+                </button>
                 <img src={mjolnir} alt="" className='randomchar__decoration' />
             </div>
         </div>
