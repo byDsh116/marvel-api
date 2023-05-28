@@ -12,7 +12,7 @@
     }
 
     &__name {
-        position: absolute;
+        // position: absolute;
         width: 42px;
         height: 29px;
         font-family: 'Roboto Condensed';
@@ -22,5 +22,26 @@
         line-height: 26px;
         color: #000000;
 
+    }
+
+    &__descr-text {
+        font-family: Roboto Condensed;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    &__comics-block {
+        position: absolute;
+        width: 59px;
+        height: 24px;
+        font-family: 'Roboto Condensed';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
     }
 }
