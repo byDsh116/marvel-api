@@ -35,8 +35,8 @@ const RandomChar = (props) => {
                 <p className='randomchar__title'>
                     Or choose another one
                 </p>
-                <button className="button button__main">
-                    <div className="inner">try it</div>
+                <button className='button button__main'>
+                    <div className='inner'>try it</div>
                 </button>
                 <img src={mjolnir} alt="" className='randomchar__decoration' />
             </div>
